@@ -1,0 +1,67 @@
+---
+import "../styles/style.css";
+import Card from "../componets/Card.astro";
+import Forslaaet from "../componets/Forslaaet.astro";
+import Playlist from "../componets/Playlist.astro";
+import Nav from "../componets/Nav.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Spotify</title>
+	</head>
+	<body>
+		<Nav />
+		<!-- <header>
+			<div class="logo">
+            <a href="index.astro"><img class="logos"src="../../public/icons/logo_hvid.svg" alt="logo"></a>
+			<a href="#"><img src="../../public/icons/home_hvid.svg" alt="home knap">Hjem</a>
+			<a href="#"><img src="../../public/icons/search-hvid.svg" alt="search">Søg</a>
+        </div>
+		</header> -->
+
+		<header>
+			<nav>
+				<li><div class="grid_pile">
+			<img class="pil" src="../public/icons/back-btn-hvid.svg" alt="pil">
+			<img class="pil" src="../public/icons/forward-btn-hvid.svg" alt="pil">
+			</div></li>
+			
+			</nav>
+		</header>
+		<main>
+			
+			<h2>Godaften</h2>
+<div class="forslået">
+<Forslaaet image="https://picsum.photos/id/65/150/150" text="Sange, du synes godt om"/>
+<Forslaaet image="https://picsum.photos/id/68/150/150" text="Roadtrips"/>
+<Forslaaet image="https://picsum.photos/id/76/150/150" text="Chill hits"/>
+<Forslaaet image="https://picsum.photos/id/240/150/150" text="The Wall"/>
+<Forslaaet image="https://picsum.photos/id/331/150/150" text="Deep focus"/>
+<Forslaaet image="https://picsum.photos/id/325/150/150" text="Earthbound vibes"/>
+</div>
+<h2>Senest afspillede</h2>
+<div class="specielt">
+	<Playlist image="https://picsum.photos/id/334/150/150" text="Peru - R3hab Remix" ptext="Fireboy DML, Ed Sheeran, R3HAB"/>
+	<Playlist image="https://picsum.photos/id/240/150/150" text="Rum Bum Bum - Hedegaard" ptext="NAVID, HEDEGAARD"/>
+	<Playlist image="https://picsum.photos/id/338/150/150" text="All Mine" ptext="D.O.D"/>
+	<Playlist image="https://picsum.photos/id/68/150/150" text="Dior" ptext="Pop Smoke"/>
+	<Playlist image="https://picsum.photos/id/364/150/150" text="Often - Kygo Remix" ptext="The Weeknd"/>
+</div>
+	<h2>Dine mest populære mix</h2>
+<div class="specielt">
+	<Playlist image="https://picsum.photos/id/325/150/150" text="Half A Man" ptext="Dean Lewis"/>
+	<Playlist image="https://picsum.photos/id/334/150/150" text="Faded" ptext="ZHU"/>
+	<Playlist image="https://picsum.photos/id/364/150/150" text="I'm in Love with the Coco" ptext="Hitimpulse"/>
+	<Playlist image="https://picsum.photos/id/338/150/150" text="MCQUEEN" ptext="Kendrick Lamar, ZHU, Travis Scott og mere"/>
+	<Playlist image="https://picsum.photos/id/349/150/150" text="2010'er-mix" ptext="Kendrick Lamar, ZHU, Travis Scott og mere"/>
+</div>
+
+		</main>
+		
+	</body>
+</html>
